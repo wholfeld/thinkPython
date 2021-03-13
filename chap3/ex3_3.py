@@ -19,18 +19,45 @@ def line_segment(char_start, str_rep):
     print()
 
 
+def do_nothing(arg):
+    return
+
+
 def print_string(string):
     print(string, end=' ')
 
 
-def do_one_do_four(f, arg, arg2):
+def one_four_one(f, arg, f2, arg2, f3, arg3):
     f(arg)
-    do_four(f, arg2)
+    do_four(f2, arg2)
+    f3(arg3)
 
-def draw_box
+
+def draw_columns(columns):
+    for j in range(5):
+        for k in range(columns - 1):
+            one_four_one(print_string, '|', print_string, '  ', do_nothing, '')
+        one_four_one(print_string, '|', print_string, '  ', print_string, '|')
+        print()
 
 
-do_one_do_four(print_string, '+', ' -')
-do_one_do_four(print_string, '+', ' -')
+def draw_boxes(columns, rows):
+    for i in range(rows):
+        for j in range(columns - 1):
+            one_four_one(print_string, '+', print_string, ' -', do_nothing, '')
+        one_four_one(print_string, '+', print_string, ' -', print_string, '+')
+        print()
+
+        draw_columns(columns)
+
+    for j in range(columns - 1):
+        one_four_one(print_string, '+', print_string, ' -', do_nothing, '')
+    one_four_one(print_string, '+', print_string, ' -', print_string, '+')
+    print()
+
+
+# do_one_do_four(print_string, '+', ' -')
+# do_one_do_four(print_string, '+', ' -')
+draw_boxes(3, 2)
 #do_one_do_four(print_string('|'), print_string('  '))
 # line_segment('|', '  ')
