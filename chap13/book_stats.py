@@ -98,7 +98,7 @@ def choose_from_hist(words_dict)-> str:
 
 def get_index(rand, counts, start, end):
     mid = (start + end) // 2
-    if mid > (len(counts) -1) or mid == 0:
+    if mid > (len(counts) - 1) or mid == 0:
         return mid
     if rand > counts[mid - 1]:
         if rand < counts[mid]:
