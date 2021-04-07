@@ -33,6 +33,7 @@ class books_stats():
 
                 add_words(line.strip(), self.book_dict)
         return 1
+    
 
 
 def add_words(line: str, words_dict: dict):
