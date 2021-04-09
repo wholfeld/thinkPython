@@ -10,12 +10,12 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": [
-                "sad",
-                "happy",
-                "sad.txt",
-                "happy.txt"
-            ]
+            // "args": [
+            //     "sad",
+            //     "happy",
+            //     "sad.txt",
+            //     "happy.txt"
+            // ]
         }
     ]
 }
