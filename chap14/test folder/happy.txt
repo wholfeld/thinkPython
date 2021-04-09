@@ -1,0 +1,6 @@
+The dog was happy.
+
+He was a Sad dog.
+
+Now he is a happy dog.
+Sad dog is now happy.
